@@ -3,15 +3,15 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 
-const Home = () => {
+const MyAccount = () => {
     const { navigate } = useNavigation()
 
   return (
       <View style={{ flex: 1, alignItems: 'center'}}>
-          <Text>Home</Text>
+          <Text>MyAccount</Text>
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-          <TouchableOpacity style={styles.button} onPress={() => {  navigate('MyAccount') }}>
-            <Text style={styles.buttonText}>Ir para Perfil</Text>
+          <TouchableOpacity style={styles.button} onPress={() => {  navigate('Home') }}>
+            <Text style={styles.buttonText}>Ir para Home</Text>
           </TouchableOpacity>
           </View>
       </View>
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
     buttonText: { color: '#FFF'}
 })
 
-export default Home
+export default MyAccount
